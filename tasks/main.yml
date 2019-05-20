@@ -1,3 +1,4 @@
+---
 - name: get back mount information associated to mountpoint
   command: findmnt --fstab '{{ var_removable_partition }}'
   register: device_name
